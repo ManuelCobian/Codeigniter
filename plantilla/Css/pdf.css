@@ -1,0 +1,35 @@
+body {
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    white-space: normal;
+}
+#header-site {
+    background: #262727 none repeat scroll 0 0;
+    border-bottom: 2px solid #cf4137;
+    float: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo-site {
+    float: left;
+    height: 50px;
+    margin: 5px 0 0px 10px;
+    width: 140px;
+}
+.logo-site h1 {
+    margin: 0;
+}
+.logo-site h1 a {
+    float: left;
+    height: 40px;
+    width: 131px;
+    text-indent:-999px;
+    background-image:url('https://upload.wikimedia.org/wikipedia/en/7/79/Veeco_company_logo.png');
+    background-repeat:no-repeat;
+    background-position:0px; 
+    background-size:100px;
+}
