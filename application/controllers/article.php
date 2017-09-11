@@ -56,10 +56,21 @@ class Article extends CI_Controller
    	}
 
    	public function insert(){
+
    		$post=$this->input->post();
+   		$this->load->model('file');
    		$file_name=$this->file->UploadImage('./public/img','No es posible subir la imagen ');
    		$post['file_name']=$file_name;
-   		$this->post->insert($post);
+   		$bool=$this->post->insert($post);
+
+   		if ($bool) {
+   			# code...
+
+   			header("Location:".base_url()."article/nuevo");
+   		}
+   		else{
+   			header("Location:".base_url()."profile/");
+   		}
 
 
    	}
